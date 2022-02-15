@@ -1,0 +1,10 @@
+#!/bin/sh
+
+d="$(ip route get 1.1.1.1 | head -n1 | cut -d ' ' -f5-)"
+
+case "$d" in
+	e*)  echo Ethernet ;;
+	wl*) echo WiFi     ;;
+	ww*) echo Mobile   ;;
+	*) echo $d ;;
+esac

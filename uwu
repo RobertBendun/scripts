@@ -1,0 +1,14 @@
+#!/bin/sh
+
+b="$(echo -ne '\e[48;5;087m')"
+p="$(echo -ne '\e[48;5;183m')"
+w="$(echo -ne '\e[48;5;255m')"
+r="$(echo -ne '\e[0m')"
+
+echo -ne '\e[38;5;237m'
+echo "$b                "
+echo "$p     PRAISE     "
+echo "$w    CATGIRLS    "
+echo "$p     EMPIRE     "
+echo "$b                "
+echo -n $r
